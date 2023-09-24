@@ -9,11 +9,11 @@ const ImageGarllery = ({fetchData}) => {
         {fetchData.map((data) => (
           <div className="image" key={data.id}>
             <a href={data.pageURL}>
-            <img src={data.largeImageURL}/>
+            <img src={data.largeImageURL} alt="your-choice"/>
             </a>
-            <div><FcLike />：{data.likes}</div>
+            <div><FcLike /> like：{data.likes}</div>
           </div>
-        ))}s
+        ))}
       </div>
     </div>
   )

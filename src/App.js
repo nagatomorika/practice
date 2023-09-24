@@ -23,7 +23,7 @@ function App() {
     <div className="container">
       <h2>my Pixabay</h2>
       <form onSubmit={(e) => handleSubmit(e)}>
-      <input type="text" placeholder="search" ref={ref} />
+      <input type="text" placeholder="検索したい画像の単語を入力してください" ref={ref} />
     </form>
     <ImageGarllery fetchData={fetchData}/>
     </div>
