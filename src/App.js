@@ -8,7 +8,6 @@ function App() {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(ref.current.value)
     const endpointURL =
     `https://pixabay.com/api/?key=39636101-21e2cf0b6434684df51f7d3c0&q=${ref.current.value}&image_type=photo`
     fetch(endpointURL)

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./ImageGarllery.css"
+import { FcLike } from "react-icons/fc"
 
 const ImageGarllery = ({fetchData}) => {
   return (
@@ -10,8 +11,9 @@ const ImageGarllery = ({fetchData}) => {
             <a href={data.pageURL}>
             <img src={data.largeImageURL}/>
             </a>
+            <div><FcLike />：{data.likes}</div>
           </div>
-        ))}
+        ))}s
       </div>
     </div>
   )
